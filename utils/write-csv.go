@@ -18,6 +18,7 @@ func WriteCsv(path string, properties []structs.Property) error {
 	headers := []string{
 		"Address",
 		"Price",
+		"Square",
 		"Url",
 	}
 	writer.Write(headers)
@@ -27,6 +28,7 @@ func WriteCsv(path string, properties []structs.Property) error {
 			property.Address,
 			property.Price,
 			property.Url,
+			property.Square,
 		}
 
 		writer.Write(record)

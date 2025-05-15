@@ -1,5 +1,5 @@
 package structs
 
 type Property struct {
-	Price, Address, Url string
+	Price, Square, Address, Url string
 }
