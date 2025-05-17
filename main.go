@@ -49,7 +49,7 @@ func main() {
 	}
 
 	c.OnError(func(_ *colly.Response, err error) {
-		fmt.Println("Something went wrong:", err.Error())
+		log.Fatal("Something went wrong: ", err.Error())
 	})
 
 	c.OnRequest(func(r *colly.Request) {
@@ -74,5 +74,5 @@ func main() {
 		fmt.Println("Failed to convert file to []byte")
 	}
 
-	analyzers.BasicPropertiesAnalyzer(bytes)
+	analyzers.PropertiesAnalyzer(bytes, url)
 }
