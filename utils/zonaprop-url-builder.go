@@ -2,8 +2,8 @@ package utils
 
 import (
 	"fmt"
-	"scraper/structs"
 	"strings"
+	"zonaprop-scraper/structs"
 )
 
 func UrlBuilder(url structs.Url) string {

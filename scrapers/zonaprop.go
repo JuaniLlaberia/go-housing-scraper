@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"math"
 	"math/rand"
-	"scraper/structs"
-	"scraper/utils"
 	"strconv"
 	"strings"
 	"sync"
 	"time"
+	"zonaprop-scraper/structs"
+	"zonaprop-scraper/utils"
 
 	"github.com/gocolly/colly"
 )

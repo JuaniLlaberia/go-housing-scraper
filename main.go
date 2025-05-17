@@ -6,10 +6,10 @@ import (
 	"log"
 	"net/http/cookiejar"
 	"os"
-	"scraper/analyzers"
-	"scraper/scrapers"
-	"scraper/structs"
-	"scraper/utils"
+	"zonaprop-scraper/analyzers"
+	"zonaprop-scraper/scrapers"
+	"zonaprop-scraper/structs"
+	"zonaprop-scraper/utils"
 
 	"github.com/gocolly/colly"
 )

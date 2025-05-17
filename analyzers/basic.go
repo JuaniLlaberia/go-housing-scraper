@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"fmt"
 	"os"
-	"scraper/configs"
-	"scraper/structs"
+	"zonaprop-scraper/configs"
+	"zonaprop-scraper/structs"
 
 	"google.golang.org/genai"
 )

@@ -1,8 +1,8 @@
 package utils
 
 import (
-	"scraper/structs"
 	"sort"
+	"zonaprop-scraper/structs"
 )
 
 func SortPropertiesByPrice(properties *[]structs.Property) {

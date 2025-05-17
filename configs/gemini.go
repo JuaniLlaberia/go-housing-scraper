@@ -2,7 +2,7 @@ package configs
 
 import (
 	"context"
-	"scraper/utils"
+	"zonaprop-scraper/utils"
 
 	"google.golang.org/genai"
 )

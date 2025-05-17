@@ -3,7 +3,7 @@ package utils
 import (
 	"encoding/csv"
 	"os"
-	"scraper/structs"
+	"zonaprop-scraper/structs"
 )
 
 func WriteCsv(path string, properties []structs.Property) error {
