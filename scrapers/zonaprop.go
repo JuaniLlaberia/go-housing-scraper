@@ -55,6 +55,15 @@ func ZonapropScraper(c *colly.Collector, url structs.Url) {
 		square := strings.ReplaceAll(parts[1], ".", "")
 		property.Square = square
 
+		numPrice, errPrice := strconv.ParseInt(price, 10, 64)
+		numSquare, errSquare := strconv.ParseInt(square, 10, 64)
+
+		if errPrice == nil && errSquare == nil {
+			property.PricePerSquare = fmt.Sprintf("%v", numPrice/numSquare)
+		} else {
+			fmt.Println("Failed to convert price and square to number. So price per square was not calculated.")
+		}
+
 		url := e.ChildAttr("h3.postingCard-module__posting-description a", "href")
 		property.Url = "https://www.zonaprop.com.ar" + url
 
